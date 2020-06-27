@@ -21,3 +21,19 @@ exit
 # Exit from the shell that was created during login
 logout
 
+pwd
+ls -lrt
+grep
+ps
+top
+cp
+mv
+mkdir
+egrep
+vi
+cat
+~
+alt + .
+history
+find
+
