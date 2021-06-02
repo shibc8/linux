@@ -43,3 +43,4 @@ exit
 # Exit from the shell that was created during login
 logout
 
+## Test for BLUE
