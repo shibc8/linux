@@ -1,0 +1,61 @@
+"MISC": {
+    "Changing Ownership of a folder recursively": sudo chown -R shibish:users ./yay/,
+    "Searching package in pamac": pamac search -a vmware-horizon-client,
+    "Installing local package": sudo pacman -U zoom_x86_64.pkg.tar.xz, sudo pacman -U visual-studio-code-bin-1.56.2-1-x86_64.pkg.tar.zst,
+    "Packaging clones AUR": makepkg,
+    "copy file contents to clipBoard": xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+
+
+}
+
+"Packages":[
+    sudo pacman -S base-devel   // Dependency for makepkg
+    sudo pacman -S git
+
+]
+
+"Utilities": {
+    "tlp": [
+        sudo tlp-stat
+        sudo powertop
+        sudo nano /etc/tlp.conf 
+    ],
+    "systemctl": [
+        systemctl
+        systemctl status auto-cpufreq   // service status
+        systemctl enable auto-cpufreq   // enable along with start-up
+        systemctl start auto-cpufreq    // starting manually
+        sudo systemctl status fstrim.timer  // SSD 
+    ],
+    "start-UP": [
+        sudo systemd-analyze                    // Time taken for start-up
+        sudo systemd-analyze critical-chain     // Time taken be components in start-up
+    ],
+    "ohMyPOSH": [
+        for file in ~/.poshthemes/*.omp.json; do echo "$file\n"; oh-my-posh --config $file --shell universal; echo "\n"; done;
+        */
+        . ~/.bashrc
+    ]
+}
+
+"System": {
+    "info": [
+        hostnamectl
+        hostnamectl set-hostname manjaro
+    ],
+    "files": [
+        sudo nano /etc/fstab
+    ],
+    "security": [
+        ls -al ~/.ssh
+        ssh-keygen -t ed25519 -C "c.shibish@gmail.com"
+        eval "$(ssh-agent -s)"
+        ssh-add -K ~/.ssh/id_ed25519
+
+    ]
+}
+
+//! GIT merging different history
+
+
+
