@@ -13,6 +13,8 @@ cat
 alt + .
 history
 find
+passwd
+sudo passwd
 
 #Install a package
 sudo apt-get install xz-utils
@@ -36,6 +38,7 @@ date
 time ls -lrt
 
 # Assign value to any environment variable
+set
 set options
 
 # Exits from the current shell
