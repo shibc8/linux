@@ -48,3 +48,31 @@ exit
 logout
 
 ## Test for BLUE
+
+history
+ - ctrl + R     // Search history back
+ - ctrl + S     // Search history forward
+ - ctrl + G      // Cancels Search history
+ 
+ - ctrl + A     // Move to beginning of line
+ - ctrl + E     // Move to end of line
+ - ctrl + left or right arrow   // navigates one word left or right
+
+ - ctrl + D, delete or backsapce        // deletes one character
+ - ctrl + K     // Deletes all the charcter from current to rest of the line
+ - ctrl + X and backspace   // Deletes all the char from current to beginning of line
+
+ - ctrl + X and ctrl + E  // invokes editor
+
+/etc/profile
+/etc/bash/bashrc
+and ~
+
+
+export var = value
+
+env
+unset
+
+man man     // Uses less to output
+info
