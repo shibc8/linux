@@ -27,5 +27,11 @@ git config --list
   git remote
 
 
-  git remote add origin https://github.com/shibc8/linux
+git remote add origin https://github.com/shibc8/linux
   
+
+# SSH Configuration
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add -K /Users/you/.ssh/id_rsa
